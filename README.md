@@ -16,3 +16,12 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+
+# Custom Web Component Notes
+
+- Notes: https://vuejs.org/guide/extras/web-components.html
+- Change file name to `Name.ce.vue` to use style from `<style>` in component without need for `.css` file. `.ce.` does that.
+  - Otherwise your style will still be extracted into single `.css` file separate from component that will need to be imported to project this component is used in.
+  - https://vuejs.org/guide/extras/web-components.html#building-custom-elements-with-vue 
+- 

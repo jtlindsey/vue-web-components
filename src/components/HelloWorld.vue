@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
+// https://vuejs.org/guide/typescript/options-api.html#typing-component-props
+
+// https://vuejs.org/api/sfc-script-setup.html#defineprops-defineemits
+
+defineProps({
+  msg: {
+    type: String,
+    default: 'Hello!'
+  }
+})
 
 const count = ref(0)
 </script>
